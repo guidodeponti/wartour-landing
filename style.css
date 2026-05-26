@@ -76,12 +76,13 @@ a { text-decoration: none; color: inherit; }
   font-size: 14px; font-weight: 600; letter-spacing: .01em;
   border-radius: var(--r-sm);
   border: 1px solid transparent;
+  box-shadow: 0 4px 20px rgba(220,38,38,.2);
   transition: background .3s ease, box-shadow .3s ease;
   cursor: pointer;
 }
 .btn-solid:hover {
   background: var(--red-h);
-  box-shadow: 0 0 32px rgba(239,68,68,.4);
+  box-shadow: 0 4px 32px rgba(239,68,68,.45);
 }
 .btn-solid--lg { padding: 14px 28px; font-size: 15px; }
 
@@ -426,7 +427,7 @@ a { text-decoration: none; color: inherit; }
 .feat-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  gap: 14px;
 }
 .feat-card {
   background: rgba(23,23,23,.7);
@@ -439,9 +440,9 @@ a { text-decoration: none; color: inherit; }
   transition: background .3s ease, border-color .35s ease, box-shadow .35s ease, transform .35s ease;
 }
 .feat-card:hover {
-  background: rgba(30,30,30,.9);
-  border-color: rgba(239,68,68,.2);
-  box-shadow: 0 0 0 1px rgba(239,68,68,.07), 0 8px 40px rgba(0,0,0,.4);
+  background: rgba(26,26,26,.95);
+  border-color: rgba(255,255,255,.12);
+  box-shadow: 0 8px 40px rgba(0,0,0,.4);
   transform: translateY(-3px);
 }
 .feat-icon-wrap {
@@ -474,7 +475,7 @@ a { text-decoration: none; color: inherit; }
 .steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 16px;
 }
 .step {
   background: rgba(23,23,23,.6);
