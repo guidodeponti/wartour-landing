@@ -11,7 +11,7 @@
   <link rel="icon" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -100,6 +100,16 @@
             </div>
           </div>
         </div>
+
+        <!-- notifica flottante -->
+        <div class="phone-notif">
+          <div class="pn-topbar"></div>
+          <span class="pn-icon">✅</span>
+          <div class="pn-text">
+            <div class="pn-title">Risultato approvato</div>
+            <div class="pn-sub">ShadowFang · G2 · +14 pt</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -114,6 +124,30 @@
       </p>
     </div>
   </div>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-number">50<span class="stat-plus">+</span></span>
+          <span class="stat-label">Tornei completati</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number">200<span class="stat-plus">+</span></span>
+          <span class="stat-label">Team registrati</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number">1.000<span class="stat-plus">+</span></span>
+          <span class="stat-label">Partite tracciate</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Dispute rimaste aperte</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FEATURES -->
   <section class="features" id="features">
@@ -177,33 +211,68 @@
     </div>
   </section>
 
+  <!-- VERSUS -->
+  <section class="versus">
+    <div class="container">
+      <div class="sec-header">
+        <div class="sec-eyebrow">Perché WarTour</div>
+        <h2 class="sec-title">Dimentica WhatsApp.</h2>
+        <p class="sec-sub">Ogni problema che hai con i tornei manuali ha già una soluzione in WarTour.</p>
+      </div>
+      <div class="versus-grid reveal">
+        <div class="versus-col versus-col--bad">
+          <div class="versus-head">Senza WarTour</div>
+          <ul class="versus-list">
+            <li>Liste iscrizioni su WhatsApp</li>
+            <li>Screenshot inviati in chat privata</li>
+            <li>Classifica aggiornata a mano</li>
+            <li>Dispute sui risultati senza prove</li>
+            <li>Nessuno storico delle partite</li>
+            <li>Confusione tra i team ogni weekend</li>
+          </ul>
+        </div>
+        <div class="versus-arrow">→</div>
+        <div class="versus-col versus-col--good">
+          <div class="versus-head">Con WarTour</div>
+          <ul class="versus-list">
+            <li>Iscrizioni automatiche dal link torneo</li>
+            <li>Screenshot caricati e verificati in-app</li>
+            <li>Classifica live aggiornata ad ogni partita</li>
+            <li>Risultati approvati dall'admin, definitivi</li>
+            <li>Storico completo per ogni giocatore</li>
+            <li>Ogni team autonomo, zero messaggi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- HOW IT WORKS -->
   <section class="how" id="how">
     <div class="container">
       <div class="sec-header">
         <div class="sec-eyebrow">Come funziona</div>
         <h2 class="sec-title">Operativo in tre passi.</h2>
+        <p class="sec-sub">Dal setup al fischio finale, WarTour gestisce tutto. Tu pensa solo a giocare.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
-          <div class="step-num">01</div>
-          <div>
+          <div class="step-badge">01</div>
+          <div class="step-body">
             <h3>Crea il torneo</h3>
             <p>Configura nome, numero di partite e formato. Apri le iscrizioni e condividi il link al tuo clan.</p>
           </div>
         </div>
-        <div class="step-line"></div>
         <div class="step reveal">
-          <div class="step-num">02</div>
-          <div>
+          <div class="step-badge">02</div>
+          <div class="step-body">
             <h3>I team si iscrivono</h3>
             <p>I giocatori aprono il link, formano il team e si registrano dall'app in pochi tap.</p>
           </div>
         </div>
-        <div class="step-line"></div>
         <div class="step reveal">
-          <div class="step-num">03</div>
-          <div>
+          <div class="step-badge">03</div>
+          <div class="step-body">
             <h3>Gioca. La classifica si aggiorna da sola.</h3>
             <p>I team caricano gli screenshot al termine di ogni partita. L'admin approva e i punti vengono assegnati automaticamente.</p>
           </div>
