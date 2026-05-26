@@ -402,6 +402,39 @@ a { text-decoration: none; color: inherit; }
 .pn-title { font-size: 11px; font-weight: 600; color: var(--n100); }
 .pn-sub   { font-size: 10px; color: var(--n600); margin-top: 2px; }
 
+/* ─── STATS ─── */
+.stats {
+  position: relative; z-index: 1;
+  padding: 80px 0;
+  border-top: 1px solid rgba(255,255,255,.05);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+.stat-item {
+  background: var(--n950);
+  padding: 40px 32px;
+  display: flex; flex-direction: column; gap: 8px;
+  transition: background .3s ease;
+}
+.stat-item:hover { background: var(--n900); }
+.stat-number {
+  font-size: clamp(32px, 3.5vw, 44px);
+  font-weight: 900; letter-spacing: -0.04em;
+  color: var(--n50); line-height: 1;
+}
+.stat-plus { font-size: 60%; color: var(--accent); margin-left: 2px; }
+.stat-label {
+  font-size: 13px; font-weight: 500;
+  color: var(--n600); line-height: 1.4;
+}
+
 /* ─── FEATURES ─── */
 .features {
   position: relative; z-index: 1;
@@ -570,6 +603,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 900px) {
   .float-card { display: none; }
   .feat-grid  { grid-template-columns: 1fr 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
   .steps      { grid-template-columns: 1fr; gap: 10px; }
   .hero { padding: 140px 24px 100px; }
 }
