@@ -30,28 +30,48 @@
 
   <!-- HERO -->
   <section class="hero">
+
     <div class="hero-content">
       <div class="hero-eyebrow">
         <span class="eyebrow-dot"></span>
-        Call of Duty Warzone · Tournament Platform
+        Warzone Tournament Platform
       </div>
       <h1 class="hero-title">
-        Lo strumento operativo<br />
-        definitivo per i tuoi<br />
-        tornei Warzone.
+        Lo strumento definitivo<br />
+        per i tuoi tornei<br />
+        <span class="title-accent">Warzone.</span>
       </h1>
       <p class="hero-sub">
-        WarTour centralizza iscrizioni, risultati e classifiche in un'unica piattaforma.
-        Elimina le dispute, azzera la confusione, porta il tuo clan al livello successivo.
+        Iscrizioni automatiche, risultati verificati, classifica live.<br />
+        Niente WhatsApp. Niente dispute. Solo tornei seri.
       </p>
       <div class="hero-actions">
-        <a href="https://wartour-app.vercel.app" class="btn-solid">Inizia gratuitamente</a>
-        <a href="#features" class="btn-ghost">Scopri le funzioni →</a>
+        <a href="https://wartour-app.vercel.app" class="btn-solid btn-solid--lg">Inizia gratuitamente →</a>
+        <a href="#features" class="btn-ghost">Scopri le funzioni</a>
       </div>
-      <p class="hero-note">Gratuito · Nessun download · Setup in 2 minuti</p>
+      <div class="hero-stats">
+        <div class="hs-item"><strong>50+</strong> tornei</div>
+        <div class="hs-sep"></div>
+        <div class="hs-item"><strong>200+</strong> team</div>
+        <div class="hs-sep"></div>
+        <div class="hs-item"><strong>0</strong> dispute aperte</div>
+      </div>
     </div>
 
-    <div class="hero-visual">
+    <!-- phone frame con glow + float cards -->
+    <div class="phone-frame">
+      <div class="phone-frame-glow"></div>
+
+      <!-- card sinistra: iscrizioni -->
+      <div class="float-card float-card--left">
+        <div class="fc-head">
+          <span class="fc-dot fc-dot--green"></span>
+          <span class="fc-label">Iscrizioni aperte</span>
+        </div>
+        <div class="fc-val">6 <span>/ 16</span></div>
+        <div class="fc-bar"><div class="fc-bar-fill" style="width:37%"></div></div>
+      </div>
+
       <div class="mockup-wrapper">
         <div class="phone">
           <div class="phone-speaker"></div>
@@ -60,9 +80,7 @@
               <span class="app-bar-logo">WARTOUR</span>
               <span class="app-bar-bell">🔔</span>
             </div>
-
             <div class="app-label">Tornei attivi</div>
-
             <div class="app-card app-card--live">
               <div class="app-card-row">
                 <span class="app-card-title">Iron Storm Cup #4</span>
@@ -71,7 +89,6 @@
               <div class="app-card-meta">Partita 2 di 3 · 8 team</div>
               <div class="app-progress"><div class="app-progress-fill" style="width:66%"></div></div>
             </div>
-
             <div class="app-card">
               <div class="app-card-row">
                 <span class="app-card-title">Friday Night Wars</span>
@@ -80,9 +97,7 @@
               <div class="app-card-meta">6 / 16 team iscritti</div>
               <div class="app-progress"><div class="app-progress-fill" style="width:37%"></div></div>
             </div>
-
             <div class="app-label" style="margin-top:8px">Classifica live</div>
-
             <div class="app-rank-row">
               <span class="rank-badge gold">1</span>
               <span class="rank-name">ShadowFang</span>
@@ -100,53 +115,19 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- notifica flottante -->
-        <div class="phone-notif">
-          <div class="pn-topbar"></div>
-          <span class="pn-icon">✅</span>
-          <div class="pn-text">
-            <div class="pn-title">Risultato approvato</div>
-            <div class="pn-sub">ShadowFang · G2 · +14 pt</div>
-          </div>
+      <!-- card destra: approvazione -->
+      <div class="float-card float-card--right">
+        <div class="pn-topbar"></div>
+        <span class="pn-icon">✅</span>
+        <div class="pn-text">
+          <div class="pn-title">Risultato approvato</div>
+          <div class="pn-sub">ShadowFang · G2 · +14 pt</div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- STATEMENT -->
-  <div class="statement">
-    <div class="container">
-      <p>
-        Ogni weekend migliaia di clan organizzano tornei Warzone su WhatsApp —
-        con liste manuali, screenshot inviati in chat e classifiche aggiornate a mano.
-        <strong>WarTour risolve tutto questo.</strong>
-      </p>
-    </div>
-  </div>
-
-  <!-- STATS -->
-  <section class="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal">
-          <span class="stat-number">50<span class="stat-plus">+</span></span>
-          <span class="stat-label">Tornei completati</span>
-        </div>
-        <div class="stat-item reveal">
-          <span class="stat-number">200<span class="stat-plus">+</span></span>
-          <span class="stat-label">Team registrati</span>
-        </div>
-        <div class="stat-item reveal">
-          <span class="stat-number">1.000<span class="stat-plus">+</span></span>
-          <span class="stat-label">Partite tracciate</span>
-        </div>
-        <div class="stat-item reveal">
-          <span class="stat-number">0</span>
-          <span class="stat-label">Dispute rimaste aperte</span>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- FEATURES -->
@@ -164,7 +145,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
           </div>
           <h3>Zero iscrizioni mancate</h3>
-          <p>I team si iscrivono dall'app con un link. Niente messaggi persi, niente liste manuali da aggiornare.</p>
+          <p>I team si iscrivono dall'app con un link. Niente messaggi persi, niente liste manuali.</p>
         </div>
 
         <div class="feat-card reveal">
@@ -172,7 +153,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <h3>Nessuna disputa sui risultati</h3>
-          <p>Screenshot caricati dai team, verificati dall'admin. Il risultato approvato è definitivo — niente contestazioni.</p>
+          <p>Screenshot caricati dai team, verificati dall'admin. Il risultato approvato è definitivo.</p>
         </div>
 
         <div class="feat-card reveal">
@@ -180,23 +161,23 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
           <h3>Classifica sempre aggiornata</h3>
-          <p>I punti si calcolano in automatico dopo ogni approvazione. Tutti vedono la classifica in tempo reale.</p>
+          <p>I punti si calcolano in automatico dopo ogni approvazione. Tutti vedono tutto in tempo reale.</p>
         </div>
 
         <div class="feat-card reveal">
           <div class="feat-icon-wrap">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </div>
-          <h3>Profilo giocatore condivisibile</h3>
-          <p>Stats personali e storico tornei pubblici, accessibili con un link diretto — senza bisogno di registrazione.</p>
+          <h3>Profilo giocatore pubblico</h3>
+          <p>Stats personali e storico tornei accessibili con un link — senza registrazione.</p>
         </div>
 
         <div class="feat-card reveal">
           <div class="feat-icon-wrap">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
           </div>
-          <h3>Nessuno si perde nulla</h3>
-          <p>Notifiche automatiche per risultati approvati, inviti al team e recap del torneo. Zero aggiornamenti manuali.</p>
+          <h3>Notifiche automatiche</h3>
+          <p>Risultati approvati, inviti al team, recap del torneo. Zero aggiornamenti manuali.</p>
         </div>
 
         <div class="feat-card reveal">
@@ -204,45 +185,9 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
           </div>
           <h3>Storico completo, per sempre</h3>
-          <p>Ogni torneo, ogni partita, ogni kill. Il percorso di ogni giocatore registrato e consultabile in qualsiasi momento.</p>
+          <p>Ogni torneo, ogni partita, ogni kill. Consultabile in qualsiasi momento.</p>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- VERSUS -->
-  <section class="versus">
-    <div class="container">
-      <div class="sec-header">
-        <div class="sec-eyebrow">Perché WarTour</div>
-        <h2 class="sec-title">Dimentica WhatsApp.</h2>
-        <p class="sec-sub">Ogni problema che hai con i tornei manuali ha già una soluzione in WarTour.</p>
-      </div>
-      <div class="versus-grid reveal">
-        <div class="versus-col versus-col--bad">
-          <div class="versus-head">Senza WarTour</div>
-          <ul class="versus-list">
-            <li>Liste iscrizioni su WhatsApp</li>
-            <li>Screenshot inviati in chat privata</li>
-            <li>Classifica aggiornata a mano</li>
-            <li>Dispute sui risultati senza prove</li>
-            <li>Nessuno storico delle partite</li>
-            <li>Confusione tra i team ogni weekend</li>
-          </ul>
-        </div>
-        <div class="versus-arrow">→</div>
-        <div class="versus-col versus-col--good">
-          <div class="versus-head">Con WarTour</div>
-          <ul class="versus-list">
-            <li>Iscrizioni automatiche dal link torneo</li>
-            <li>Screenshot caricati e verificati in-app</li>
-            <li>Classifica live aggiornata ad ogni partita</li>
-            <li>Risultati approvati dall'admin, definitivi</li>
-            <li>Storico completo per ogni giocatore</li>
-            <li>Ogni team autonomo, zero messaggi</li>
-          </ul>
-        </div>
       </div>
     </div>
   </section>
@@ -253,7 +198,7 @@
       <div class="sec-header">
         <div class="sec-eyebrow">Come funziona</div>
         <h2 class="sec-title">Operativo in tre passi.</h2>
-        <p class="sec-sub">Dal setup al fischio finale, WarTour gestisce tutto. Tu pensa solo a giocare.</p>
+        <p class="sec-sub">Dal setup al fischio finale, WarTour gestisce tutto.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
@@ -274,7 +219,7 @@
           <div class="step-badge">03</div>
           <div class="step-body">
             <h3>Gioca. La classifica si aggiorna da sola.</h3>
-            <p>I team caricano gli screenshot al termine di ogni partita. L'admin approva e i punti vengono assegnati automaticamente.</p>
+            <p>I team caricano gli screenshot. L'admin approva e i punti vengono assegnati automaticamente.</p>
           </div>
         </div>
       </div>
@@ -288,7 +233,7 @@
         <img src="logo.png" alt="WarTour" class="cta-logo" />
         <h2 class="cta-title">Il tuo prossimo torneo<br />merita una piattaforma vera.</h2>
         <p class="cta-sub">Gratuito · Nessun download · Pronto in 2 minuti</p>
-        <a href="https://wartour-app.vercel.app" class="btn-solid btn-solid--lg">Accedi a WarTour</a>
+        <a href="https://wartour-app.vercel.app" class="btn-solid btn-solid--lg">Accedi a WarTour →</a>
       </div>
     </div>
   </section>
