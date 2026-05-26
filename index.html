@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WarTour — Tornei Warzone per il tuo clan</title>
   <meta name="description" content="La piattaforma per organizzare tornei di Warzone tra amici e clan. Iscrizioni, risultati verificati, classifica live." />
-  <meta property="og:title" content="WarTour" />
+  <meta property="og:title" content="WarTour — Tornei Warzone" />
   <meta property="og:description" content="Il tuo clan merita una piattaforma vera." />
   <meta property="og:image" content="logo.png" />
   <link rel="icon" href="logo.png" />
@@ -24,67 +24,95 @@
     <a href="https://wartour-app.vercel.app" class="nav-cta">Entra nell'app →</a>
   </header>
 
-  <!-- HERO (sfondo chiaro) -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-inner">
-      <img src="logo.png" alt="WarTour" class="hero-logo" />
+    <div class="hero-left">
       <div class="hero-badge">🎮 Call of Duty Warzone</div>
       <h1 class="hero-title">Il tuo clan<br>merita di più.</h1>
-      <p class="hero-sub">
-        Basta organizzare tornei su WhatsApp. WarTour è la piattaforma
-        per gestire iscrizioni, verificare i risultati e seguire la classifica
-        in tempo reale — da qualsiasi dispositivo.
-      </p>
-      <a href="https://wartour-app.vercel.app" class="btn-hero">Inizia gratis →</a>
-      <p class="hero-note">Gratuito · Nessun download · Pronto in 2 minuti</p>
+      <p class="hero-sub">Basta organizzare tornei su WhatsApp. WarTour gestisce iscrizioni, verifica i risultati e aggiorna la classifica — in tempo reale, da qualsiasi dispositivo.</p>
+      <a href="https://wartour-app.vercel.app" class="btn-primary">Inizia gratis →</a>
+      <p class="hero-hint">Gratuito · Nessun download · Pronto in 2 minuti</p>
     </div>
-    <div class="hero-fade"></div>
+
+    <div class="hero-right">
+      <!-- mockup telefono CSS -->
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <!-- header app -->
+          <div class="app-topbar">
+            <span class="app-topbar-logo">WARTOUR</span>
+            <span class="app-topbar-bell">🔔</span>
+          </div>
+          <!-- sezione tornei -->
+          <div class="app-section-label">Tornei attivi</div>
+          <!-- card torneo 1 -->
+          <div class="app-card app-card--live">
+            <div class="app-card-top">
+              <span class="app-card-name">Capra Clan Cup #4</span>
+              <span class="app-badge app-badge--live">● LIVE</span>
+            </div>
+            <div class="app-card-meta">Partita 2 di 3 · 8 team</div>
+            <div class="app-card-bar"><div class="app-card-fill" style="width:66%"></div></div>
+          </div>
+          <!-- card torneo 2 -->
+          <div class="app-card">
+            <div class="app-card-top">
+              <span class="app-card-name">Friday Night Wars</span>
+              <span class="app-badge app-badge--open">Iscrizioni aperte</span>
+            </div>
+            <div class="app-card-meta">6 / 16 team iscritti</div>
+            <div class="app-card-bar"><div class="app-card-fill" style="width:37%"></div></div>
+          </div>
+          <!-- mini classifica -->
+          <div class="app-section-label" style="margin-top:10px">Classifica live</div>
+          <div class="app-rank"><span class="app-rank-pos gold">1</span><span class="app-rank-name">CapraTeam</span><span class="app-rank-pts">38 pt</span></div>
+          <div class="app-rank"><span class="app-rank-pos silver">2</span><span class="app-rank-name">WolfPack</span><span class="app-rank-pts">29 pt</span></div>
+          <div class="app-rank"><span class="app-rank-pos bronze">3</span><span class="app-rank-name">TeamAlpha</span><span class="app-rank-pts">21 pt</span></div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- FEATURES -->
-  <section class="features">
+  <section class="features" id="features">
     <div class="container">
       <div class="sec-label">Funzionalità</div>
       <h2 class="sec-title">Tutto quello che serve.<br>Niente di superfluo.</h2>
-
       <div class="feat-grid">
 
-        <div class="feat-main">
-          <span class="feat-main-icon">📋</span>
-          <div>
-            <h3>Iscrizioni online</h3>
-            <p>Condividi il link del torneo al tuo clan. I team si iscrivono direttamente dall'app — niente messaggi sparsi, niente liste manuali, zero confusione. L'admin apre e chiude le iscrizioni con un tap.</p>
-          </div>
+        <div class="feat-card reveal">
+          <div class="feat-icon">📋</div>
+          <h3>Iscrizioni online</h3>
+          <p>Condividi il link al tuo clan. I team si iscrivono dall'app — niente messaggi sparsi, niente liste manuali.</p>
         </div>
 
-        <div class="feat-main">
-          <span class="feat-main-icon">📸</span>
-          <div>
-            <h3>Risultati verificati</h3>
-            <p>I team caricano gli screenshot al termine di ogni partita. L'admin approva o rifiuta ogni risultato — zero dispute, zero imbrogli, nessuna discussione in chat su chi ha fatto cosa.</p>
-          </div>
+        <div class="feat-card reveal">
+          <div class="feat-icon">📸</div>
+          <h3>Risultati verificati</h3>
+          <p>I team caricano gli screenshot delle partite. L'admin approva o rifiuta — zero dispute, zero imbrogli.</p>
         </div>
 
-        <div class="feat-small">
-          <span class="feat-small-icon">🏆</span>
+        <div class="feat-card reveal">
+          <div class="feat-icon">🏆</div>
           <h3>Classifica live</h3>
           <p>Si aggiorna in automatico dopo ogni partita approvata. Tutti sanno esattamente dove si trovano.</p>
         </div>
 
-        <div class="feat-small">
-          <span class="feat-small-icon">👤</span>
+        <div class="feat-card reveal">
+          <div class="feat-icon">👤</div>
           <h3>Profilo pubblico</h3>
-          <p>Stats personali e storico tornei per ogni giocatore, condivisibili con un semplice link.</p>
+          <p>Stats personali e storico tornei per ogni giocatore, condivisibili con un link diretto.</p>
         </div>
 
-        <div class="feat-small">
-          <span class="feat-small-icon">🔔</span>
+        <div class="feat-card reveal">
+          <div class="feat-icon">🔔</div>
           <h3>Notifiche in-app</h3>
           <p>Risultati approvati, inviti al team, recap torneo. Nessuno si perde nulla.</p>
         </div>
 
-        <div class="feat-small">
-          <span class="feat-small-icon">📊</span>
+        <div class="feat-card reveal">
+          <div class="feat-icon">📊</div>
           <h3>Storico completo</h3>
           <p>Ogni torneo, ogni partita, ogni kill. Il tuo percorso salvato per sempre.</p>
         </div>
@@ -97,22 +125,23 @@
   <section class="how">
     <div class="container">
       <div class="sec-label">Come funziona</div>
-      <h2 class="sec-title">Tre passi.<br>Poi si gioca.</h2>
-
+      <h2 class="sec-title">Tre passi. Poi si gioca.</h2>
       <div class="steps">
-        <div class="step">
-          <div class="step-n">01</div>
+        <div class="step reveal">
+          <div class="step-num">01</div>
           <h3>Crea il torneo</h3>
           <p>Imposta nome, numero di partite e formato. Apri le iscrizioni e condividi il link al tuo clan in pochi secondi.</p>
         </div>
-        <div class="step">
-          <div class="step-n">02</div>
+        <div class="step-sep">→</div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
           <h3>I team si iscrivono</h3>
-          <p>I giocatori aprono il link, formano il team e si registrano dall'app. Tutto in pochi tap, da qualsiasi dispositivo.</p>
+          <p>I giocatori aprono il link, formano il team e si registrano dall'app. Tutto in pochi tap.</p>
         </div>
-        <div class="step">
-          <div class="step-n">03</div>
-          <h3>Gioca e scala la classifica</h3>
+        <div class="step-sep">→</div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Gioca e scala</h3>
           <p>Finita ogni partita, i team caricano gli screenshot. L'admin approva e la classifica si aggiorna da sola.</p>
         </div>
       </div>
@@ -120,9 +149,9 @@
   </section>
 
   <!-- CTA FINALE -->
-  <section class="cta-section">
+  <section class="cta-final">
     <div class="container">
-      <div class="cta-box">
+      <div class="cta-box reveal">
         <div class="cta-glow"></div>
         <img src="logo.png" alt="WarTour" class="cta-logo" />
         <h2 class="cta-title">Il prossimo torneo<br>inizia da qui.</h2>
@@ -135,24 +164,20 @@
   <!-- FOOTER -->
   <footer class="footer">
     <img src="logo.png" alt="WarTour" class="footer-logo" />
-    <p>© 2026 WarTour · La piattaforma per i tuoi tornei Warzone</p>
+    <p>© 2026 WarTour · Tornei Warzone</p>
   </footer>
 
   <script>
-    // Nav diventa scura quando si scorre fuori dalla hero bianca
+    // Nav: diventa scura quando esci dalla hero
     const nav = document.getElementById('nav');
-    const hero = document.querySelector('.hero');
-    const obs = new IntersectionObserver(([e]) => {
-      nav.classList.toggle('nav--dark', !e.isIntersecting);
-    }, { threshold: 0 });
-    obs.observe(hero);
+    new IntersectionObserver(([e]) => nav.classList.toggle('nav--scrolled', !e.isIntersecting), { threshold: 0 })
+      .observe(document.querySelector('.hero'));
 
-    // Fade-in elementi al scroll
-    const items = document.querySelectorAll('.feat-main, .feat-small, .step, .cta-box');
-    const fadeObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); fadeObs.unobserve(e.target); }});
-    }, { threshold: 0.1 });
-    items.forEach(el => fadeObs.observe(el));
+    // Reveal on scroll
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }});
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
   </script>
 
 </body>
