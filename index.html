@@ -4,11 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WarTour — Tornei Warzone per il tuo clan</title>
-  <meta name="description" content="La piattaforma per organizzare tornei di Warzone tra amici e clan. Iscrizioni online, risultati verificati, classifica live." />
-  <meta property="og:title" content="WarTour — Tornei Warzone" />
+  <meta name="description" content="La piattaforma per organizzare tornei di Warzone tra amici e clan. Iscrizioni, risultati verificati, classifica live." />
+  <meta property="og:title" content="WarTour" />
   <meta property="og:description" content="Il tuo clan merita una piattaforma vera." />
   <meta property="og:image" content="logo.png" />
-  <meta property="og:type" content="website" />
   <link rel="icon" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,82 +17,74 @@
 <body>
 
   <!-- NAV -->
-  <header class="nav">
+  <header class="nav" id="nav">
     <a href="#" class="nav-brand">
-      <img src="logo.png" alt="WarTour" class="nav-logo-img" />
+      <img src="logo.png" alt="WarTour" class="nav-logo" />
     </a>
-    <a href="https://wartour-app.vercel.app" class="nav-enter">Entra nell'app →</a>
+    <a href="https://wartour-app.vercel.app" class="nav-cta">Entra nell'app →</a>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO (sfondo chiaro) -->
   <section class="hero">
-    <div class="hero-glow"></div>
     <div class="hero-inner">
       <img src="logo.png" alt="WarTour" class="hero-logo" />
+      <div class="hero-badge">🎮 Call of Duty Warzone</div>
       <h1 class="hero-title">Il tuo clan<br>merita di più.</h1>
       <p class="hero-sub">
-        WarTour è la piattaforma per organizzare tornei di Warzone tra amici e clan.
-        Iscrizioni, risultati verificati e classifiche live — tutto in un posto, senza WhatsApp.
+        Basta organizzare tornei su WhatsApp. WarTour è la piattaforma
+        per gestire iscrizioni, verificare i risultati e seguire la classifica
+        in tempo reale — da qualsiasi dispositivo.
       </p>
-      <a href="https://wartour-app.vercel.app" class="cta-btn">Inizia gratis →</a>
-      <p class="hero-hint">Gratuito · Nessun download · Pronto in 2 minuti</p>
+      <a href="https://wartour-app.vercel.app" class="btn-hero">Inizia gratis →</a>
+      <p class="hero-note">Gratuito · Nessun download · Pronto in 2 minuti</p>
     </div>
-    <div class="hero-scroll">
-      <span class="hero-scroll-label">Scopri</span>
-      <div class="hero-scroll-line"></div>
-    </div>
+    <div class="hero-fade"></div>
   </section>
 
-  <!-- TRUST BAR -->
-  <div class="trust-bar">
-    <span>🎮 Call of Duty Warzone</span>
-    <span class="tb-dot">·</span>
-    <span>📱 Mobile &amp; Desktop</span>
-    <span class="tb-dot">·</span>
-    <span>📸 Risultati verificati</span>
-    <span class="tb-dot">·</span>
-    <span>⚡ Classifica in tempo reale</span>
-  </div>
-
   <!-- FEATURES -->
-  <section class="features" id="features">
+  <section class="features">
     <div class="container">
-      <div class="sec-eyebrow">Funzionalità</div>
+      <div class="sec-label">Funzionalità</div>
       <h2 class="sec-title">Tutto quello che serve.<br>Niente di superfluo.</h2>
+
       <div class="feat-grid">
 
-        <div class="feat-card feat-card--lg">
-          <div class="feat-icon">📋</div>
-          <h3>Iscrizioni online</h3>
-          <p>Condividi il link del torneo al tuo clan. Ogni team si iscrive direttamente dall'app — niente messaggi sparsi, niente liste manuali, zero confusione.</p>
+        <div class="feat-main">
+          <span class="feat-main-icon">📋</span>
+          <div>
+            <h3>Iscrizioni online</h3>
+            <p>Condividi il link del torneo al tuo clan. I team si iscrivono direttamente dall'app — niente messaggi sparsi, niente liste manuali, zero confusione. L'admin apre e chiude le iscrizioni con un tap.</p>
+          </div>
         </div>
 
-        <div class="feat-card feat-card--lg">
-          <div class="feat-icon">📸</div>
-          <h3>Risultati verificati</h3>
-          <p>I team caricano gli screenshot delle partite. L'admin approva o rifiuta ogni risultato — zero dispute, zero imbrogli, nessuna discussione in chat.</p>
+        <div class="feat-main">
+          <span class="feat-main-icon">📸</span>
+          <div>
+            <h3>Risultati verificati</h3>
+            <p>I team caricano gli screenshot al termine di ogni partita. L'admin approva o rifiuta ogni risultato — zero dispute, zero imbrogli, nessuna discussione in chat su chi ha fatto cosa.</p>
+          </div>
         </div>
 
-        <div class="feat-card">
-          <div class="feat-icon">🏆</div>
+        <div class="feat-small">
+          <span class="feat-small-icon">🏆</span>
           <h3>Classifica live</h3>
           <p>Si aggiorna in automatico dopo ogni partita approvata. Tutti sanno esattamente dove si trovano.</p>
         </div>
 
-        <div class="feat-card">
-          <div class="feat-icon">👤</div>
+        <div class="feat-small">
+          <span class="feat-small-icon">👤</span>
           <h3>Profilo pubblico</h3>
-          <p>Stats personali e storico tornei per ogni giocatore, condivisibili con un link diretto.</p>
+          <p>Stats personali e storico tornei per ogni giocatore, condivisibili con un semplice link.</p>
         </div>
 
-        <div class="feat-card">
-          <div class="feat-icon">🔔</div>
+        <div class="feat-small">
+          <span class="feat-small-icon">🔔</span>
           <h3>Notifiche in-app</h3>
           <p>Risultati approvati, inviti al team, recap torneo. Nessuno si perde nulla.</p>
         </div>
 
-        <div class="feat-card">
-          <div class="feat-icon">📊</div>
+        <div class="feat-small">
+          <span class="feat-small-icon">📊</span>
           <h3>Storico completo</h3>
           <p>Ogni torneo, ogni partita, ogni kill. Il tuo percorso salvato per sempre.</p>
         </div>
@@ -105,82 +96,38 @@
   <!-- HOW IT WORKS -->
   <section class="how">
     <div class="container">
-      <div class="sec-eyebrow">Come funziona</div>
+      <div class="sec-label">Come funziona</div>
       <h2 class="sec-title">Tre passi.<br>Poi si gioca.</h2>
+
       <div class="steps">
-
         <div class="step">
-          <div class="step-num">01</div>
-          <div class="step-body">
-            <h3>Crea il torneo</h3>
-            <p>Imposta nome, numero di partite e difficoltà. Apri le iscrizioni e condividi il link al tuo clan in pochi secondi.</p>
-          </div>
+          <div class="step-n">01</div>
+          <h3>Crea il torneo</h3>
+          <p>Imposta nome, numero di partite e formato. Apri le iscrizioni e condividi il link al tuo clan in pochi secondi.</p>
         </div>
-
         <div class="step">
-          <div class="step-num">02</div>
-          <div class="step-body">
-            <h3>I team si iscrivono</h3>
-            <p>I giocatori aprono il link, formano il team e si registrano dall'app. Tutto in pochi tap, da qualsiasi dispositivo.</p>
-          </div>
+          <div class="step-n">02</div>
+          <h3>I team si iscrivono</h3>
+          <p>I giocatori aprono il link, formano il team e si registrano dall'app. Tutto in pochi tap, da qualsiasi dispositivo.</p>
         </div>
-
         <div class="step">
-          <div class="step-num">03</div>
-          <div class="step-body">
-            <h3>Gioca e scala la classifica</h3>
-            <p>Finita ogni partita, i team caricano gli screenshot. L'admin approva e la classifica si aggiorna da sola.</p>
-          </div>
+          <div class="step-n">03</div>
+          <h3>Gioca e scala la classifica</h3>
+          <p>Finita ogni partita, i team caricano gli screenshot. L'admin approva e la classifica si aggiorna da sola.</p>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PER CHI È -->
-  <section class="forwho">
-    <div class="container">
-      <div class="sec-eyebrow">Per chi è</div>
-      <h2 class="sec-title">Hai un ruolo.<br>WarTour ce l'ha anche lui.</h2>
-      <div class="forwho-grid">
-
-        <div class="forwho-card">
-          <div class="forwho-icon">🎯</div>
-          <div class="forwho-role">Organizzatore</div>
-          <h3>Tu crei.<br>L'app gestisce.</h3>
-          <p>Crea il torneo, apri le iscrizioni, verifica i risultati e chiudi il torneo. WarTour fa il resto: classifica automatica, notifiche ai team, storico completo.</p>
-          <ul class="forwho-list">
-            <li>Crea tornei in 2 minuti</li>
-            <li>Approva o rifiuta i risultati</li>
-            <li>Gestisci i team iscritti</li>
-          </ul>
-        </div>
-
-        <div class="forwho-card forwho-card--gold">
-          <div class="forwho-icon">🎮</div>
-          <div class="forwho-role">Giocatore</div>
-          <h3>Tu giochi.<br>L'app tiene il conto.</h3>
-          <p>Iscriviti al torneo del tuo clan, carica i risultati delle partite e guarda la tua posizione in classifica salire in tempo reale.</p>
-          <ul class="forwho-list">
-            <li>Iscriviti con un click</li>
-            <li>Carica risultati con screenshot</li>
-            <li>Segui la classifica live</li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </section>
 
   <!-- CTA FINALE -->
-  <section class="cta-final">
+  <section class="cta-section">
     <div class="container">
       <div class="cta-box">
-        <div class="cta-box-glow"></div>
+        <div class="cta-glow"></div>
         <img src="logo.png" alt="WarTour" class="cta-logo" />
         <h2 class="cta-title">Il prossimo torneo<br>inizia da qui.</h2>
         <p class="cta-sub">Gratuito · Nessun download · Pronto in 2 minuti</p>
-        <a href="https://wartour-app.vercel.app" class="cta-btn cta-btn--lg">Entra in WarTour →</a>
+        <a href="https://wartour-app.vercel.app" class="btn-cta">Entra in WarTour →</a>
       </div>
     </div>
   </section>
@@ -188,8 +135,25 @@
   <!-- FOOTER -->
   <footer class="footer">
     <img src="logo.png" alt="WarTour" class="footer-logo" />
-    <p class="footer-copy">© 2026 WarTour · La piattaforma per i tuoi tornei Warzone</p>
+    <p>© 2026 WarTour · La piattaforma per i tuoi tornei Warzone</p>
   </footer>
+
+  <script>
+    // Nav diventa scura quando si scorre fuori dalla hero bianca
+    const nav = document.getElementById('nav');
+    const hero = document.querySelector('.hero');
+    const obs = new IntersectionObserver(([e]) => {
+      nav.classList.toggle('nav--dark', !e.isIntersecting);
+    }, { threshold: 0 });
+    obs.observe(hero);
+
+    // Fade-in elementi al scroll
+    const items = document.querySelectorAll('.feat-main, .feat-small, .step, .cta-box');
+    const fadeObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); fadeObs.unobserve(e.target); }});
+    }, { threshold: 0.1 });
+    items.forEach(el => fadeObs.observe(el));
+  </script>
 
 </body>
 </html>
