@@ -108,7 +108,24 @@ a { text-decoration: none; color: inherit; }
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255,255,255,.06);
 }
-.nav-logo { height: 32px; width: auto; mix-blend-mode: screen; }
+.nav-brand {
+  display: flex; align-items: center; gap: 10px;
+}
+.nav-logo-wrap {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  background: #1c1c1c;
+  border: 1px solid rgba(255,255,255,.1);
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nav-logo { width: 26px; height: 26px; object-fit: contain; }
+.nav-brand-name {
+  font-size: 15px; font-weight: 800;
+  letter-spacing: .02em;
+  color: var(--n100);
+}
 .nav-links { display: flex; gap: 28px; }
 .nav-links a {
   font-size: 14px; font-weight: 500; color: var(--n400);
@@ -561,7 +578,16 @@ a { text-decoration: none; color: inherit; }
     0 0 100px rgba(239,68,68,.08),
     0 0 0 1px rgba(255,255,255,.03);
 }
-.cta-logo { height: 60px; width: auto; mix-blend-mode: screen; opacity: .9; }
+.cta-app-icon {
+  width: 72px; height: 72px;
+  border-radius: 18px;
+  background: #1c1c1c;
+  border: 1px solid rgba(255,255,255,.1);
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,.5);
+}
+.cta-logo-img { width: 58px; height: 58px; object-fit: contain; }
 .cta-title {
   font-size: clamp(24px, 3.5vw, 34px);
   font-weight: 800; letter-spacing: -0.03em;
@@ -579,7 +605,17 @@ a { text-decoration: none; color: inherit; }
   border-top: 1px solid rgba(255,255,255,.05);
 }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; }
-.footer-logo { height: 24px; width: auto; mix-blend-mode: screen; opacity: .3; }
+.footer-brand { display: flex; align-items: center; gap: 8px; }
+.footer-logo-wrap {
+  width: 24px; height: 24px;
+  border-radius: 6px;
+  background: #1c1c1c;
+  border: 1px solid rgba(255,255,255,.08);
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.footer-logo { width: 20px; height: 20px; object-fit: contain; opacity: .6; }
+.footer-brand-name { font-size: 13px; font-weight: 700; color: var(--n700); }
 .footer p { font-size: 13px; color: var(--n700); }
 
 /* ─── REVEAL ─── */
