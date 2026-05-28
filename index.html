@@ -150,7 +150,7 @@
   <!-- FEATURES -->
   <section class="features" id="features">
     <div class="container">
-      <div class="sec-header">
+      <div class="sec-header reveal">
         <div class="sec-eyebrow">Funzionalità</div>
         <h2 class="sec-title">Progettato per chi organizza tornei seri.</h2>
         <p class="sec-sub">Ogni funzione è pensata per eliminare attrito, ridurre errori e far giocare di più.</p>
@@ -212,7 +212,7 @@
   <!-- HOW IT WORKS -->
   <section class="how" id="how">
     <div class="container">
-      <div class="sec-header">
+      <div class="sec-header reveal">
         <div class="sec-eyebrow">Come funziona</div>
         <h2 class="sec-title">Operativo in tre passi.</h2>
         <p class="sec-sub">Dal setup al fischio finale, WarTour gestisce tutto.</p>
@@ -254,6 +254,11 @@
     </div>
   </section>
 
+  <!-- STICKY CTA MOBILE -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="https://wartour-app.vercel.app" class="btn-solid" style="width:100%;justify-content:center;">Accedi a WarTour →</a>
+  </div>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -263,12 +268,22 @@
   </footer>
 
   <script>
+    // fade-in-up su scroll
     const revealObs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
       });
     }, { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // sticky CTA mobile — appare quando il hero esce dallo schermo
+    const stickyCta = document.getElementById('stickyCta');
+    const hero = document.querySelector('.hero');
+    if (stickyCta && hero) {
+      new IntersectionObserver((entries) => {
+        stickyCta.classList.toggle('visible', !entries[0].isIntersecting);
+      }, { threshold: 0.1 }).observe(hero);
+    }
   </script>
 
 </body>
