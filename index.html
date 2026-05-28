@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WarTour — Lo strumento operativo per i tornei Warzone</title>
+  <title>WarTour — Gestisci i tuoi tornei Warzone</title>
   <meta name="description" content="WarTour centralizza iscrizioni, risultati verificati e classifiche live per i tornei di Warzone. Niente WhatsApp, niente dispute." />
   <meta property="og:title" content="WarTour" />
-  <meta property="og:description" content="Lo strumento operativo definitivo per i tornei Warzone." />
-  <meta property="og:image" content="logo.png" />
+  <meta property="og:description" content="Lo strumento definitivo per i tornei Warzone." />
   <link rel="icon" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,40 +21,37 @@
       <span class="nav-brand-name">WarTour</span>
     </a>
     <nav class="nav-links">
-      <a href="#features">Funzionalità</a>
       <a href="#how">Come funziona</a>
+      <a href="#features">Funzionalità</a>
     </nav>
     <a href="https://wartour-app.vercel.app" class="nav-cta">Accedi →</a>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-
     <div class="hero-content">
       <div class="hero-eyebrow">
         <span class="eyebrow-dot"></span>
         Warzone Tournament Platform
       </div>
       <h1 class="hero-title">
-        Lo strumento definitivo<br />
-        per i tuoi tornei<br />
+        Basta WhatsApp.<br />
+        Gestisci i tuoi tornei<br />
         <span class="title-accent">Warzone.</span>
       </h1>
       <p class="hero-sub">
         Iscrizioni automatiche, risultati verificati, classifica live.<br />
-        Niente WhatsApp. Niente dispute. Solo tornei seri.
+        Tutto in un'unica piattaforma. Gratis.
       </p>
       <div class="hero-actions">
         <a href="https://wartour-app.vercel.app" class="btn-solid btn-solid--lg">Inizia gratuitamente →</a>
-        <a href="#features" class="btn-ghost">Scopri le funzioni</a>
+        <a href="#how" class="btn-ghost">Come funziona</a>
       </div>
     </div>
 
-    <!-- phone frame con glow + float cards -->
     <div class="phone-frame">
       <div class="phone-frame-glow"></div>
 
-      <!-- card sinistra: iscrizioni -->
       <div class="float-card float-card--left">
         <div class="fc-head">
           <span class="fc-dot fc-dot--green"></span>
@@ -110,7 +106,6 @@
         </div>
       </div>
 
-      <!-- card destra: approvazione -->
       <div class="float-card float-card--right">
         <div class="pn-topbar"></div>
         <span class="pn-icon">✅</span>
@@ -120,7 +115,6 @@
         </div>
       </div>
     </div>
-
   </section>
 
   <!-- STATS -->
@@ -147,96 +141,245 @@
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section class="features" id="features">
+  <!-- HOW IT WORKS — blocchi alternati -->
+  <section class="how-blocks" id="how">
     <div class="container">
-      <div class="sec-header reveal">
-        <div class="sec-eyebrow">Funzionalità</div>
-        <h2 class="sec-title">Progettato per chi organizza tornei seri.</h2>
-        <p class="sec-sub">Ogni funzione è pensata per eliminare attrito, ridurre errori e far giocare di più.</p>
+
+      <div class="how-intro reveal">
+        <div class="sec-eyebrow">Come funziona</div>
+        <h2 class="sec-title">Tre passi. Zero caos.</h2>
       </div>
-      <div class="feat-grid">
 
-        <div class="feat-card reveal">
-          <div class="feat-icon-wrap">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-          </div>
-          <h3>Zero iscrizioni mancate</h3>
-          <p>I team si iscrivono dall'app con un link. Niente messaggi persi, niente liste manuali.</p>
+      <!-- Block 1 -->
+      <div class="how-block reveal">
+        <div class="how-block-text">
+          <div class="how-step-num">01</div>
+          <h3>Crea il torneo<br />in 2 minuti.</h3>
+          <p>Imposta nome, numero di partite e formato. Apri le iscrizioni e condividi il link al tuo clan — nessuna configurazione complicata.</p>
+          <ul class="how-check">
+            <li>Codice di accesso opzionale</li>
+            <li>Link e QR code generati in automatico</li>
+            <li>Regolamento personalizzabile</li>
+          </ul>
         </div>
-
-        <div class="feat-card reveal">
-          <div class="feat-icon-wrap">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="how-block-visual">
+          <div class="app-mockup">
+            <div class="am-bar">
+              <div class="am-dots"><span></span><span></span><span></span></div>
+              <span class="am-title">Nuovo torneo</span>
+            </div>
+            <div class="am-body">
+              <div class="am-field">
+                <div class="am-label">Nome torneo</div>
+                <div class="am-input">Iron Storm Cup #5</div>
+              </div>
+              <div class="am-row">
+                <div class="am-field">
+                  <div class="am-label">Partite</div>
+                  <div class="am-input">3</div>
+                </div>
+                <div class="am-field">
+                  <div class="am-label">Formato</div>
+                  <div class="am-input am-input--accent">Terzetti</div>
+                </div>
+              </div>
+              <div class="am-field">
+                <div class="am-label">Codice accesso</div>
+                <div class="am-input am-input--muted">Facoltativo</div>
+              </div>
+              <div class="am-cta-btn">Crea torneo →</div>
+              <div class="am-share-row">
+                <div class="am-share-url">wartour-app.vercel.app/t/iron-5</div>
+                <span class="am-share-copy">📋</span>
+              </div>
+            </div>
           </div>
-          <h3>Nessuna disputa sui risultati</h3>
-          <p>Screenshot caricati dai team, verificati dall'admin. Il risultato approvato è definitivo.</p>
         </div>
-
-        <div class="feat-card reveal">
-          <div class="feat-icon-wrap">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <h3>Classifica sempre aggiornata</h3>
-          <p>I punti si calcolano in automatico dopo ogni approvazione. Tutti vedono tutto in tempo reale.</p>
-        </div>
-
-        <div class="feat-card reveal">
-          <div class="feat-icon-wrap">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h3>Profilo giocatore pubblico</h3>
-          <p>Stats personali e storico tornei accessibili con un link — senza registrazione.</p>
-        </div>
-
-        <div class="feat-card reveal">
-          <div class="feat-icon-wrap">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
-          </div>
-          <h3>Notifiche automatiche</h3>
-          <p>Risultati approvati, inviti al team, recap del torneo. Zero aggiornamenti manuali.</p>
-        </div>
-
-        <div class="feat-card reveal">
-          <div class="feat-icon-wrap">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-          </div>
-          <h3>Storico completo, per sempre</h3>
-          <p>Ogni torneo, ogni partita, ogni kill. Consultabile in qualsiasi momento.</p>
-        </div>
-
       </div>
+
+      <!-- Block 2 -->
+      <div class="how-block how-block--reverse reveal">
+        <div class="how-block-text">
+          <div class="how-step-num">02</div>
+          <h3>I team si iscrivono<br />dal link.</h3>
+          <p>Nessun account richiesto per iscriversi. I giocatori aprono il link, inseriscono il nome del team e dei giocatori. Fatto.</p>
+          <ul class="how-check">
+            <li>Iscrizione senza registrazione obbligatoria</li>
+            <li>Lista team aggiornata in tempo reale</li>
+            <li>Chiusura iscrizioni con un tap</li>
+          </ul>
+        </div>
+        <div class="how-block-visual">
+          <div class="app-mockup">
+            <div class="am-bar">
+              <div class="am-dots"><span></span><span></span><span></span></div>
+              <span class="am-title">Iron Storm Cup #5</span>
+            </div>
+            <div class="am-body">
+              <div class="am-tournament-head">
+                <div class="am-t-name">Iron Storm Cup #5</div>
+                <span class="am-pill am-pill--green">● Iscrizioni aperte</span>
+              </div>
+              <div class="am-progress-row">
+                <span class="am-prog-label">3 / 16 team iscritti</span>
+                <div class="am-prog-bar"><div class="am-prog-fill" style="width:18%"></div></div>
+              </div>
+              <div class="am-team-list">
+                <div class="am-team-row">
+                  <span class="am-team-pos">1</span>
+                  <span class="am-team-name">ShadowFang</span>
+                  <span class="am-team-ok">✓</span>
+                </div>
+                <div class="am-team-row">
+                  <span class="am-team-pos">2</span>
+                  <span class="am-team-name">IronWolves</span>
+                  <span class="am-team-ok">✓</span>
+                </div>
+                <div class="am-team-row">
+                  <span class="am-team-pos">3</span>
+                  <span class="am-team-name">NightBlade</span>
+                  <span class="am-team-ok">✓</span>
+                </div>
+                <div class="am-team-row am-team-row--join">
+                  <span>+</span>
+                  <span class="am-team-name am-team-name--muted">Iscriviti al torneo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Block 3 -->
+      <div class="how-block reveal">
+        <div class="how-block-text">
+          <div class="how-step-num">03</div>
+          <h3>Gioca. La classifica<br />si aggiorna da sola.</h3>
+          <p>Ogni team carica gli screenshot a fine partita. L'admin approva i risultati e i punti vengono calcolati automaticamente.</p>
+          <ul class="how-check">
+            <li>Screenshot come prova verificabile</li>
+            <li>Approvazione singola o massiva</li>
+            <li>Classifica live visibile a tutti</li>
+          </ul>
+        </div>
+        <div class="how-block-visual">
+          <div class="app-mockup">
+            <div class="am-bar">
+              <div class="am-dots"><span></span><span></span><span></span></div>
+              <span class="am-title">Classifica · Iron Storm Cup #5</span>
+            </div>
+            <div class="am-body">
+              <div class="am-rank-header">
+                <span>Team</span>
+                <span>Kill</span>
+                <span>Punti</span>
+              </div>
+              <div class="am-rank-row am-rank-row--1">
+                <div class="am-rank-left">
+                  <span class="am-pos am-pos--gold">1</span>
+                  <span class="am-rname">ShadowFang</span>
+                </div>
+                <span class="am-kills">12</span>
+                <span class="am-rpts">38 pt</span>
+              </div>
+              <div class="am-rank-row am-rank-row--2">
+                <div class="am-rank-left">
+                  <span class="am-pos am-pos--silver">2</span>
+                  <span class="am-rname">IronWolves</span>
+                </div>
+                <span class="am-kills">9</span>
+                <span class="am-rpts">29 pt</span>
+              </div>
+              <div class="am-rank-row">
+                <div class="am-rank-left">
+                  <span class="am-pos am-pos--bronze">3</span>
+                  <span class="am-rname">NightBlade</span>
+                </div>
+                <span class="am-kills">7</span>
+                <span class="am-rpts">21 pt</span>
+              </div>
+              <div class="am-rank-row">
+                <div class="am-rank-left">
+                  <span class="am-pos">4</span>
+                  <span class="am-rname">GhostSquad</span>
+                </div>
+                <span class="am-kills">5</span>
+                <span class="am-rpts">14 pt</span>
+              </div>
+              <div class="am-approved-badge">✅ Risultati approvati · G3 di 3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="how" id="how">
+  <!-- FEATURES COMPACT -->
+  <section class="features-compact" id="features">
     <div class="container">
-      <div class="sec-header reveal">
-        <div class="sec-eyebrow">Come funziona</div>
-        <h2 class="sec-title">Operativo in tre passi.</h2>
-        <p class="sec-sub">Dal setup al fischio finale, WarTour gestisce tutto.</p>
-      </div>
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step-badge">01</div>
-          <div class="step-body">
-            <h3>Crea il torneo</h3>
-            <p>Configura nome, numero di partite e formato. Apri le iscrizioni e condividi il link al tuo clan.</p>
-          </div>
+      <div class="fc-inner reveal">
+        <div class="fc-header">
+          <div class="sec-eyebrow">Funzionalità</div>
+          <h2 class="sec-title">Tutto quello che serve.<br />Niente di più.</h2>
+          <a href="https://wartour-app.vercel.app" class="btn-solid">Prova gratis →</a>
         </div>
-        <div class="step reveal">
-          <div class="step-badge">02</div>
-          <div class="step-body">
-            <h3>I team si iscrivono</h3>
-            <p>I giocatori aprono il link, formano il team e si registrano dall'app in pochi tap.</p>
+        <div class="fc-list">
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Zero iscrizioni mancate</strong>
+              <p>Link + QR code per iscriversi senza account</p>
+            </div>
           </div>
-        </div>
-        <div class="step reveal">
-          <div class="step-badge">03</div>
-          <div class="step-body">
-            <h3>Gioca. La classifica si aggiorna da sola.</h3>
-            <p>I team caricano gli screenshot. L'admin approva e i punti vengono assegnati automaticamente.</p>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Risultati verificati</strong>
+              <p>Screenshot caricati dai team, approvati dall'admin</p>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Classifica live</strong>
+              <p>Aggiornata automaticamente dopo ogni approvazione</p>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Profilo giocatore pubblico</strong>
+              <p>Stats e storico tornei con link diretto</p>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Notifiche automatiche</strong>
+              <p>Risultati, inviti e recap senza messaggi manuali</p>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Storico completo</strong>
+              <p>Ogni torneo, partita e kill salvati per sempre</p>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Approvazione bulk</strong>
+              <p>Approva più risultati in un click solo</p>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Lobby code</strong>
+              <p>Codice partita condiviso direttamente nell'app</p>
+            </div>
           </div>
         </div>
       </div>
@@ -254,11 +397,6 @@
     </div>
   </section>
 
-  <!-- STICKY CTA MOBILE -->
-  <div class="sticky-cta" id="stickyCta">
-    <a href="https://wartour-app.vercel.app" class="btn-solid" style="width:100%;justify-content:center;">Accedi a WarTour →</a>
-  </div>
-
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -268,22 +406,12 @@
   </footer>
 
   <script>
-    // fade-in-up su scroll
     const revealObs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
-
-    // sticky CTA mobile — appare quando il hero esce dallo schermo
-    const stickyCta = document.getElementById('stickyCta');
-    const hero = document.querySelector('.hero');
-    if (stickyCta && hero) {
-      new IntersectionObserver((entries) => {
-        stickyCta.classList.toggle('visible', !entries[0].isIntersecting);
-      }, { threshold: 0.1 }).observe(hero);
-    }
   </script>
 
 </body>
