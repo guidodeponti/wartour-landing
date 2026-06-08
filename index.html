@@ -22,6 +22,7 @@
     </a>
     <nav class="nav-links">
       <a href="#how">Come funziona</a>
+      <a href="#modes">Modalità</a>
       <a href="#features">Funzionalità</a>
     </nav>
     <a href="https://wartour-app.vercel.app" class="nav-cta">Accedi →</a>
@@ -173,15 +174,13 @@
                 <div class="am-label">Nome torneo</div>
                 <div class="am-input">Iron Storm Cup #5</div>
               </div>
-              <div class="am-row">
-                <div class="am-field">
-                  <div class="am-label">Partite</div>
-                  <div class="am-input">3</div>
-                </div>
-                <div class="am-field">
-                  <div class="am-label">Formato</div>
-                  <div class="am-input am-input--accent">Terzetti</div>
-                </div>
+              <div class="am-field">
+                <div class="am-label">Formato</div>
+                <div class="am-input am-input--accent">MatchPoint ▾</div>
+              </div>
+              <div class="am-field">
+                <div class="am-label">Punti obiettivo</div>
+                <div class="am-input am-input--gold">100 pt</div>
               </div>
               <div class="am-field">
                 <div class="am-label">Codice accesso</div>
@@ -274,10 +273,10 @@
                 <span>Kill</span>
                 <span>Punti</span>
               </div>
-              <div class="am-rank-row am-rank-row--1">
+              <div class="am-rank-row am-rank-row--1 am-rank-row--mp">
                 <div class="am-rank-left">
                   <span class="am-pos am-pos--gold">1</span>
-                  <span class="am-rname">ShadowFang</span>
+                  <span class="am-rname">ShadowFang <span class="am-mp-badge">🎯 MP</span></span>
                 </div>
                 <span class="am-kills">12</span>
                 <span class="am-rpts">38 pt</span>
@@ -306,12 +305,46 @@
                 <span class="am-kills">5</span>
                 <span class="am-rpts">14 pt</span>
               </div>
-              <div class="am-approved-badge">✅ Risultati approvati · G3 di 3</div>
+              <div class="am-approved-badge am-mp-alert">🎯 ShadowFang a match point — vince il prossimo game!</div>
             </div>
           </div>
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- MODALITÀ -->
+  <section class="modes-section" id="modes">
+    <div class="container">
+      <div class="modes-intro reveal">
+        <div class="sec-eyebrow">Modalità</div>
+        <h2 class="sec-title">Quattro formati. Un'unica piattaforma.</h2>
+        <p class="sec-sub">Scegli il formato più adatto al tuo clan — ogni modalità ha classifica live, risultati verificati e storico completo.</p>
+      </div>
+      <div class="modes-grid">
+        <div class="mode-card reveal">
+          <div class="mode-icon">🔄</div>
+          <div class="mode-name">Ritorno Terzetti</div>
+          <div class="mode-desc">Il classico. Ogni team gioca ogni partita, nessun game scartato. Vince chi accumula più punti in totale.</div>
+        </div>
+        <div class="mode-card reveal">
+          <div class="mode-icon">⭐</div>
+          <div class="mode-name">Best of 3</div>
+          <div class="mode-desc">Vengono conteggiate solo le migliori 3 partite su 4. Il game peggiore viene scartato per ogni squadra.</div>
+        </div>
+        <div class="mode-card reveal">
+          <div class="mode-icon">⭐</div>
+          <div class="mode-name">Best of 4</div>
+          <div class="mode-desc">Solo le migliori 4 partite su 5 contano. Un margine per le squadre che incontrano un game storto.</div>
+        </div>
+        <div class="mode-card mode-card--new reveal">
+          <div class="mode-new-badge">NUOVO</div>
+          <div class="mode-icon">🎯</div>
+          <div class="mode-name">MatchPoint</div>
+          <div class="mode-desc">Nessun numero fisso di partite. Il torneo finisce quando una squadra raggiunge la soglia e vince il game successivo.</div>
+        </div>
+      </div>
     </div>
   </section>
 
