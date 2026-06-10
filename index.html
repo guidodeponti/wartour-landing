@@ -23,6 +23,7 @@
     <nav class="nav-links">
       <a href="#how">Come funziona</a>
       <a href="#modes">Modalità</a>
+      <a href="#community">Community</a>
       <a href="#features">Funzionalità</a>
     </nav>
     <a href="https://wartour-app.vercel.app" class="nav-cta">Accedi →</a>
@@ -87,19 +88,19 @@
               <div class="app-card-meta">6 / 16 team iscritti</div>
               <div class="app-progress"><div class="app-progress-fill" style="width:37%"></div></div>
             </div>
-            <div class="app-label" style="margin-top:8px">Classifica live</div>
+            <div class="app-label" style="margin-top:8px">Top Players</div>
             <div class="app-rank-row">
-              <span class="rank-badge gold">1</span>
-              <span class="rank-name">ShadowFang</span>
+              <span class="rank-badge gold">🥇</span>
+              <span class="rank-name">ShadowFang <span class="rank-me">Tu</span></span>
               <span class="rank-pts">38 pt</span>
             </div>
             <div class="app-rank-row">
-              <span class="rank-badge silver">2</span>
+              <span class="rank-badge silver">🥈</span>
               <span class="rank-name">IronWolves</span>
               <span class="rank-pts">29 pt</span>
             </div>
             <div class="app-rank-row">
-              <span class="rank-badge bronze">3</span>
+              <span class="rank-badge bronze">🥉</span>
               <span class="rank-name">NightBlade</span>
               <span class="rank-pts">21 pt</span>
             </div>
@@ -348,6 +349,83 @@
     </div>
   </section>
 
+  <!-- COMMUNITY -->
+  <section class="community-section" id="community">
+    <div class="container">
+      <div class="community-inner reveal">
+        <div class="community-text">
+          <div class="sec-eyebrow">Community</div>
+          <h2 class="sec-title">Non solo tornei.<br />Una community.</h2>
+          <p class="sec-sub">Segui altri giocatori, scala il rank globale, condividi i risultati. WarTour è la piattaforma dove la tua reputazione si costruisce partita dopo partita.</p>
+          <ul class="how-check">
+            <li>Leaderboard globale con il tuo rank personale</li>
+            <li>Segui altri giocatori e tieni d'occhio le loro stats</li>
+            <li>Feed attività live — tornei in corso, nuove iscrizioni, risultati</li>
+            <li>Recap torneo condivisibile con podio e classifica finale</li>
+          </ul>
+        </div>
+        <div class="community-mockups">
+
+          <!-- Card rank -->
+          <div class="cm-card cm-card--rank">
+            <div class="cm-card-hd">
+              <span class="cm-card-icon">🏆</span>
+              <span class="cm-card-title">Top Players</span>
+            </div>
+            <div class="cm-myrank">Il tuo rank: <strong>#4</strong></div>
+            <div class="cm-lb-row cm-lb-row--1">
+              <span class="cm-medal">🥇</span>
+              <span class="cm-lb-name">ShadowFang</span>
+              <span class="cm-lb-stat">💀 142 kill</span>
+            </div>
+            <div class="cm-lb-row cm-lb-row--2">
+              <span class="cm-medal">🥈</span>
+              <span class="cm-lb-name">IronWolves</span>
+              <span class="cm-lb-stat">💀 118 kill</span>
+            </div>
+            <div class="cm-lb-row cm-lb-row--3">
+              <span class="cm-medal">🥉</span>
+              <span class="cm-lb-name">NightBlade</span>
+              <span class="cm-lb-stat">💀 97 kill</span>
+            </div>
+            <div class="cm-lb-row cm-lb-row--me">
+              <span class="cm-medal">#4</span>
+              <span class="cm-lb-name">Tu — GhostSquad <span class="cm-you-badge">Tu</span></span>
+              <span class="cm-lb-stat">💀 83 kill</span>
+            </div>
+          </div>
+
+          <!-- Card recap -->
+          <div class="cm-card cm-card--recap">
+            <div class="cm-card-hd">
+              <span class="cm-card-icon">🎉</span>
+              <span class="cm-card-title">Recap · Iron Storm Cup #4</span>
+            </div>
+            <div class="cm-recap-podio">
+              <div class="cm-podio-item cm-podio-2">
+                <span class="cm-podio-medal">🥈</span>
+                <span class="cm-podio-name">IronWolves</span>
+                <span class="cm-podio-pts">29 pt</span>
+              </div>
+              <div class="cm-podio-item cm-podio-1">
+                <span class="cm-podio-medal">🥇</span>
+                <span class="cm-podio-name">ShadowFang</span>
+                <span class="cm-podio-pts">38 pt</span>
+              </div>
+              <div class="cm-podio-item cm-podio-3">
+                <span class="cm-podio-medal">🥉</span>
+                <span class="cm-podio-name">NightBlade</span>
+                <span class="cm-podio-pts">21 pt</span>
+              </div>
+            </div>
+            <div class="cm-recap-share">🔗 Condividi risultati</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FEATURES COMPACT -->
   <section class="features-compact" id="features">
     <div class="container">
@@ -383,14 +461,14 @@
             <span class="fc-check">✓</span>
             <div>
               <strong>Profilo giocatore pubblico</strong>
-              <p>Stats e storico tornei con link diretto</p>
+              <p>Stats, storico tornei e link condivisibile</p>
             </div>
           </div>
           <div class="fc-item">
             <span class="fc-check">✓</span>
             <div>
-              <strong>Notifiche automatiche</strong>
-              <p>Risultati, inviti e recap senza messaggi manuali</p>
+              <strong>Notifiche in-app</strong>
+              <p>Risultati approvati, inviti torneo, annunci admin in tempo reale</p>
             </div>
           </div>
           <div class="fc-item">
@@ -412,6 +490,27 @@
             <div>
               <strong>Lobby code</strong>
               <p>Codice partita condiviso direttamente nell'app</p>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Recap condivisibile</strong>
+              <p>Podio e classifica finale con link pubblico post-torneo</p>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Leaderboard globale</strong>
+              <p>Classifica tra tutti i giocatori con il tuo rank evidenziato</p>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-check">✓</span>
+            <div>
+              <strong>Community e follow</strong>
+              <p>Segui altri giocatori, feed attività live, stats aggregati</p>
             </div>
           </div>
         </div>

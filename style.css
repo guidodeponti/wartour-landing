@@ -608,3 +608,138 @@ a { text-decoration: none; color: inherit; }
   .cta-inner { padding: 48px 24px; }
   .footer-inner { flex-direction: column; gap: 10px; text-align: center; }
 }
+
+/* ─── RANK BADGE "Tu" NEL MOCKUP HERO ─── */
+.rank-me {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 1px 5px;
+  border-radius: 10px;
+  background: rgba(239,68,68,.2);
+  color: #fca5a5;
+  font-size: 9px;
+  font-weight: 800;
+  vertical-align: middle;
+}
+.rank-badge { font-size: 14px; min-width: 22px; text-align: center; }
+
+/* ─── COMMUNITY SECTION ─── */
+.community-section {
+  padding: 120px 0;
+  background: linear-gradient(180deg, var(--n950) 0%, #0f0f14 100%);
+}
+.community-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.community-text .sec-sub {
+  font-size: 16px;
+  color: var(--n400);
+  line-height: 1.6;
+  margin: 16px 0 24px;
+}
+
+/* Mockups Community */
+.community-mockups {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.cm-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 12px;
+}
+.cm-card-hd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.cm-card-icon { font-size: 16px; }
+.cm-card-title { font-size: 12px; font-weight: 700; color: var(--n300); }
+
+/* Rank card */
+.cm-myrank {
+  font-size: 11px;
+  color: var(--n400);
+  background: rgba(239,68,68,.08);
+  border: 1px solid rgba(239,68,68,.18);
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+}
+.cm-myrank strong { color: #fca5a5; }
+.cm-lb-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 7px;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+.cm-lb-row--1 { background: rgba(250,204,21,.06); }
+.cm-lb-row--2 { background: rgba(148,163,184,.04); }
+.cm-lb-row--3 { background: rgba(180,120,70,.04); }
+.cm-lb-row--me { background: rgba(239,68,68,.06); border: 1px solid rgba(239,68,68,.15); }
+.cm-medal { font-size: 13px; min-width: 22px; font-weight: 800; color: var(--n400); }
+.cm-lb-row--1 .cm-medal { color: #fbbf24; }
+.cm-lb-name { flex: 1; font-weight: 600; color: var(--n300); }
+.cm-lb-stat { font-size: 11px; color: var(--n600); }
+.cm-you-badge {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 10px;
+  background: rgba(239,68,68,.2);
+  color: #fca5a5;
+  font-size: 9px;
+  font-weight: 800;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+/* Recap card */
+.cm-recap-podio {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.cm-podio-item {
+  text-align: center;
+  padding: 10px 6px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.07);
+}
+.cm-podio-1 {
+  background: rgba(250,204,21,.07);
+  border-color: rgba(250,204,21,.18);
+}
+.cm-podio-medal { font-size: 18px; display: block; margin-bottom: 4px; }
+.cm-podio-name { font-size: 10px; font-weight: 700; color: var(--n300); display: block; margin-bottom: 3px; }
+.cm-podio-pts { font-size: 11px; font-weight: 800; color: #fbbf24; }
+.cm-recap-share {
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,.1);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--n400);
+  cursor: pointer;
+}
+
+/* ─── RESPONSIVE COMMUNITY ─── */
+@media (max-width: 960px) {
+  .community-inner { grid-template-columns: 1fr; gap: 48px; }
+}
+@media (max-width: 640px) {
+  .community-section { padding: 80px 0; }
+  .cm-recap-podio { grid-template-columns: 1fr 1fr 1fr; }
+}
