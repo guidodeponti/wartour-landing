@@ -88,7 +88,11 @@ a { text-decoration: none; color: inherit; }
 }
 .nav-brand-name {
   font-size: 16px; font-weight: 800;
-  letter-spacing: .01em; color: var(--n100);
+  letter-spacing: .01em;
+  background: linear-gradient(to right, #009246 0%, #009246 32%, #f5f5f5 42%, #f5f5f5 58%, #ce2b37 68%, #ce2b37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .nav-links { display: flex; gap: 28px; }
 .nav-links a { font-size: 14px; font-weight: 500; color: var(--n400); transition: color .3s ease; }
@@ -690,6 +694,7 @@ a { text-decoration: none; color: inherit; }
 .cm-medal { font-size: 13px; min-width: 22px; font-weight: 800; color: var(--n400); }
 .cm-lb-row--1 .cm-medal { color: #fbbf24; }
 .cm-lb-name { flex: 1; font-weight: 600; color: var(--n300); }
+.cm-badges { font-size: 11px; opacity: .85; margin-left: 5px; letter-spacing: 1px; }
 .cm-lb-stat { font-size: 11px; color: var(--n600); }
 .cm-you-badge {
   display: inline-block;
