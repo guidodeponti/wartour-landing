@@ -575,9 +575,10 @@ a { text-decoration: none; color: inherit; }
 
 /* ─── FOOTER ─── */
 .footer { position: relative; z-index: 1; padding: 36px 0; border-top: 1px solid rgba(255,255,255,.05); }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; }
+.footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; row-gap: 12px; }
 .footer-brand-name { font-size: 14px; font-weight: 800; color: var(--n700); }
 .footer p { font-size: 13px; color: var(--n700); }
+.footer-disclaimer { flex-basis: 100%; font-size: 11px; color: var(--n600); line-height: 1.5; text-align: center; }
 
 /* ─── REVEAL ─── */
 .reveal {
