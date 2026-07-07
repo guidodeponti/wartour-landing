@@ -533,6 +533,9 @@ a { text-decoration: none; color: inherit; }
 }
 .fc-header { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 100px; }
 .fc-header .sec-title { margin-bottom: 4px; }
+.fc-highlights { display: flex; flex-direction: column; gap: 12px; }
+.fc-highlight { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; color: var(--n100); }
+.fc-highlight span { font-size: 17px; }
 
 .fc-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
 .fc-item {
