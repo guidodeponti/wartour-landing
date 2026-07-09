@@ -756,3 +756,28 @@ a { text-decoration: none; color: inherit; }
   .community-section { padding: 80px 0; }
   .cm-recap-podio { grid-template-columns: 1fr 1fr 1fr; }
 }
+
+/* ─── SUPPORT BUTTON ─── */
+.support-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 20px;
+  z-index: 400;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(220,38,38,.25);
+  transition: background .3s ease, box-shadow .3s ease, transform .2s ease;
+}
+.support-btn:hover {
+  background: var(--red-h);
+  box-shadow: 0 4px 28px rgba(239,68,68,.4);
+  transform: translateY(-1px);
+}
+@media (max-width: 640px) {
+  .support-btn { bottom: 16px; left: 14px; padding: 9px 14px; font-size: 12px; }
+}
