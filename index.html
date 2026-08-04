@@ -73,7 +73,7 @@
           <span class="fc-label">Iscrizioni aperte</span>
         </div>
         <div class="fc-val">6 <span>/ 16</span></div>
-        <div class="fc-bar"><div class="fc-bar-fill" style="width:37%"></div></div>
+        <div class="fc-bar"><div class="fc-bar-fill" data-fill="37%"></div></div>
       </div>
 
       <div class="mockup-wrapper">
@@ -91,7 +91,7 @@
                 <span class="pill pill--red">● LIVE</span>
               </div>
               <div class="app-card-meta">Partita 2 di 3 · 8 team</div>
-              <div class="app-progress"><div class="app-progress-fill" style="width:66%"></div></div>
+              <div class="app-progress"><div class="app-progress-fill" data-fill="66%"></div></div>
             </div>
             <div class="app-card">
               <div class="app-card-row">
@@ -99,7 +99,7 @@
                 <span class="pill pill--green">Aperte</span>
               </div>
               <div class="app-card-meta">6 / 16 team iscritti</div>
-              <div class="app-progress"><div class="app-progress-fill" style="width:37%"></div></div>
+              <div class="app-progress"><div class="app-progress-fill" data-fill="37%"></div></div>
             </div>
             <div class="app-label" style="margin-top:8px">Top Players</div>
             <div class="app-rank-row">
@@ -138,15 +138,15 @@
       <div class="stats-intro reveal">Piattaforma appena lanciata — i primi clan che la usano ne stanno scrivendo la storia.</div>
       <div class="stats-grid">
         <div class="stat-item reveal">
-          <span class="stat-number">100<span class="stat-plus">%</span></span>
+          <span class="stat-number"><span class="stat-count" data-count="100">0</span><span class="stat-plus">%</span></span>
           <span class="stat-label">Gratuito</span>
         </div>
         <div class="stat-item reveal">
-          <span class="stat-number">2<span class="stat-plus">min</span></span>
+          <span class="stat-number"><span class="stat-count" data-count="2">0</span><span class="stat-plus">min</span></span>
           <span class="stat-label">Per creare un torneo</span>
         </div>
         <div class="stat-item reveal">
-          <span class="stat-number">5</span>
+          <span class="stat-number"><span class="stat-count" data-count="5">0</span></span>
           <span class="stat-label">Formati di torneo</span>
         </div>
         <div class="stat-item reveal">
@@ -237,7 +237,7 @@
               </div>
               <div class="am-progress-row">
                 <span class="am-prog-label">3 / 16 team iscritti</span>
-                <div class="am-prog-bar"><div class="am-prog-fill" style="width:18%"></div></div>
+                <div class="am-prog-bar"><div class="am-prog-fill" data-fill="18%"></div></div>
               </div>
               <div class="am-team-list">
                 <div class="am-team-row">
@@ -610,6 +610,34 @@
       });
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // Barre di progresso: partono da 0 e si riempiono quando entrano in vista
+    // (anche subito, per quelle gia' visibili nella hero al caricamento).
+    const fillObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.style.width = e.target.dataset.fill; fillObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('[data-fill]').forEach(el => fillObs.observe(el));
+
+    // Numeri delle statistiche: contano da 0 al valore target quando entrano in vista.
+    const countObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        countObs.unobserve(e.target);
+        const target = parseInt(e.target.dataset.count, 10);
+        const duration = 900;
+        const start = performance.now();
+        function tick(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          e.target.textContent = Math.round(target * eased);
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
   </script>
 
 </body>
