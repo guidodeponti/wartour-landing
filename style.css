@@ -507,6 +507,15 @@ a { text-decoration: none; color: inherit; }
 .mode-name { font-size: 15px; font-weight: 700; color: var(--n100); letter-spacing: -0.01em; }
 .mode-desc { font-size: 13px; color: var(--n600); line-height: 1.65; }
 
+/* ─── MAPPE ─── */
+.maps-section { position: relative; z-index: 1; padding: 128px 0; border-top: 1px solid rgba(255,255,255,.05); }
+.maps-grid { grid-template-columns: repeat(4, 1fr); }
+.map-card { border-top: 2.5px solid transparent; }
+.map-card--haven    { border-top-color: #f59e0b; }
+.map-card--rebirth  { border-top-color: #059669; }
+.map-card--fortune  { border-top-color: #7c3aed; }
+.map-card--rotation { border-top-color: #3b82f6; }
+
 .mode-card--soon { opacity: .55; }
 .mode-card--soon:hover { transform: none; background: #111; border-color: rgba(255,255,255,.08); }
 .mode-soon-badge {
@@ -616,7 +625,7 @@ a { text-decoration: none; color: inherit; }
   .fc-header { position: static; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .modes-grid { grid-template-columns: repeat(2, 1fr); }
-  .modes-section { padding: 80px 0; }
+  .modes-section, .maps-section { padding: 80px 0; }
 }
 
 @media (max-width: 640px) {
@@ -625,7 +634,7 @@ a { text-decoration: none; color: inherit; }
   .container { padding: 0 20px; }
   .hero { padding: 140px 24px 100px; }
   .hero-title { font-size: clamp(38px, 10vw, 56px); }
-  .how-blocks, .features-compact, .cta-section, .modes-section { padding: 80px 0; }
+  .how-blocks, .features-compact, .cta-section, .modes-section, .maps-section { padding: 80px 0; }
   .modes-grid { grid-template-columns: 1fr; }
   .how-block { padding: 60px 0; }
   .fc-list { grid-template-columns: 1fr; }
