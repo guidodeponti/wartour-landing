@@ -103,6 +103,15 @@ a { text-decoration: none; color: inherit; }
   border: 1px solid var(--n700); transition: border-color .3s ease;
 }
 .nav-cta:hover { border-color: var(--n400); }
+.nav-right { display: flex; align-items: center; gap: 10px; }
+.lang-select {
+  font: inherit; font-size: 13px; font-weight: 600; color: var(--n100);
+  background: transparent; cursor: pointer;
+  padding: 7px 8px; border-radius: var(--r-sm);
+  border: 1px solid var(--n700); transition: border-color .3s ease;
+}
+.lang-select:hover { border-color: var(--n400); }
+.lang-select option { background: var(--n900); color: var(--n100); }
 
 /* ─── HERO ─── */
 .hero {
@@ -631,6 +640,9 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 640px) {
   .nav { padding: 14px 20px; }
   .nav-links { display: none; }
+  .nav-right { gap: 8px; }
+  .lang-select { padding: 6px 4px; font-size: 12px; }
+  .nav-cta { padding: 7px 12px; }
   .container { padding: 0 20px; }
   .hero { padding: 140px 24px 100px; }
   .hero-title { font-size: clamp(38px, 10vw, 56px); }
